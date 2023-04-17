@@ -9,9 +9,14 @@ user = os.getenv('DB_USER')
 password = os.getenv('DB_PASSWORD')
 database_name = os.getenv('DB_NAME')
 
+
 # Database configuarations
-database_path = 'postgresql://{}:{}@{}:{}/{}'.format(
-    user, password, 'localhost', 5432, database_name)
+#database_path = 'postgresql://{}:{}@{}:{}/{}'.format(
+#    user, password, 'localhost', 5432, database_name)
+
+database_path = os.getenv('DATABASE_PATH')
+
+
 db = SQLAlchemy()
 
 
