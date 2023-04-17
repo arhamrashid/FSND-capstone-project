@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body{
+            background-color: 088395;
+        }
+        h1, h2, p{
+            color: white;
+
+        }
+        #container{
+            width: 80%;
+            margin: 100px auto;
+        }
+        p{
+            font-size: 22px;
+        }
+        a{
+            color: B9EDDD;
+            font-weight: bold;
+        }
+        .btn{
+            display: block;
+            width: 100px;
+            height: 40px;
+            background-color: #0A4D68;
+            color: white;
+            padding: 10px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn:hover{
+            background-color: 569DAA;
+            transition: 0.4s linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome!</h1>
+        <br>
+        <br>
+        <h2>Udacity Final Capstone Project</h2>
+        <p>The API is running, as it does not has any frontend yet, please use Curl or Postman to
+            test the endpoints.
+        </p>
+        <p>The login button will give us a JWT when we successfully sign into <span style="color:#BBD6B8; font-weight:bold">Auth0</span></p>
+        <p><a href='{{login_url}}' class="btn">Login</a></p>
+
+        <p>For more information about the end points, please refer to the Documentation by clicking the link below.</p>
+        <h2><a href="#">API Documentation</a></h2>
+    </div>
+
+</body>
+</html>
